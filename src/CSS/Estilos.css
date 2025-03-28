@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: dodgerblue;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #009FFF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(351, 83%, 55%, 0.661), hsla(203, 100%, 50%, 0.661)), url(../IMG/FondoYESports.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(351, 83%, 55%, 0.661), hsla(203, 100%, 50%, 0.661)), url(../IMG/FondoYESports.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav>a {
+    color: azure;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 40px;
+    color: azure;
+}
+
+.textos-header h2 {
+    font-size: 15px;
+    font-weight: 300;
+    color: azure;
+}
+
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Sobre Nosotros*/
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us {
+    width: 350px;
+    height: 350px;
+}
+
+.Sobre-nosotros .contenido-textos {
+    width: 48%;
+}
+
+.contenido-textos h3 {
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span {
+    background: aquamarine;
+    color: aliceblue;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+/*competiciones*/
+
+.Competiciones {
+    background: hsla(0, 79%, 72%, 0.84);
+}
+
+.Galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 24%;
+    height: 224px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.imagen-port>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(187, 52%, 80%, 0.791);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 50px;
+}
+
+.hover-galeria p {
+    color: darkblue;
+}
+
+.imagen-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+
+/* Registro */
+
+.Registro{
+    background: hsla(214, 41%, 78%, 0.879);
+}
+
+.Registro-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Registro-cont > img {
+    width: 400px;
+    height: 400px;
+}
+
+.registro-ind .controls {
+    background-color: aliceblue;
+}
+.registro-ind{
+    width: 400px;
+    background: darkblue;
+    padding: 30px;
+    margin: center;
+    border-radius: 4px;
+}
+
+.registro-ind h4{
+    font-size:  14px;
+    margin-bottom: 20px;
+    color : #fff;
+}
+
+.controls{
+    width: 100%;
+    background: darkblue;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid blue;
+    font-size: 14px;
+    color:aliceblue;
+}
+
+.registro-ind p {
+    height: 40px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 40px;
+    box-shadow: 7px 13px 37px #000;
+    color:#fff;
+}
+
+.registro-ind a {
+    color: mintcream;
+    text-decoration: none;
+}
+.registro-ind a:hover {
+    color: mintcream;
+    text-decoration: underline;
+}
+
+.button {
+    width: 100%;
+    background: dodgerblue;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 14px;
+    cursor: pointer; 
+    border-radius: 4px; 
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background:blue;
+}
+
+
+/*Footer*/
+
+footer{
+    background: dimgray;
+    padding: 60px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #333;
+}
+
+.content-foo{
+    text-align: center;
+}
+.content-foo h4{
+    color:aliceblue;
+    border-bottom: 3px solid dodgerblue;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.content-foo p{
+    color:mintcream;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: grey;
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+.content-foo-redes h4{
+    color: aliceblue;
+    border-bottom: 3px solid dodgerblue;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.content-foo-redes img {
+    width: 50px; 
+    height: auto; 
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+    header{
+        background-position:center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /*galeria*/
+    .imagen-port{
+        width: 44%;
+    }
+
+    /*equipo*/
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards .card{
+        width: 90%;
+    }
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+    .Registro-cont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Registro-cont > img{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    nav>a{
+        margin-right: 5px;
+    }
+    .textos-header h1{
+        font-size: 25px;
+    }
+    .textos-header h2{
+        font-size: 12px;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Sobre-nosotros .contenido-textos{
+        width: 80%;
+    }
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /*galeria*/
+    .imagen-port{
+        width: 64%;
+    }
+
+    /*equipo*/
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards .card{
+        width: 80%;
+    }
+    .cards .card:first-child{
+        margin-bottom: 40px;
+    }
+    .cards .card >.texto-card p{
+        font-size: 11px;
+        justify-content: center;
+    }
+
+    /*registro*/
+    .Registro-cont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Registro-cont > img{
+        margin-bottom: 40px;
+    }
+    .Registro-cont > img {
+        width: 250px;
+        height: 250px;
+    }
+    .controls{
+        width: 80%;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .registro-ind{
+        width: 300px;
+        text-align: center;
+        font-size: 10px;
+    }
+    .button {
+        width: 95%;
+        font-size: 12px;
+    }
+    .registro-ind p {
+        font-size: 10px;
+        height: 25px;
+        line-height: 25px
+    }
+    .registro-ind a {
+        font-size: 10px;
+    }
+}

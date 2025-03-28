@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yemosin ESports.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="IMG/Logopagina.png">
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Competiciones</a>
+            <a href="#">Registro</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Bienvenido a donde los sueños de los gamers se hacen realidad.</h1>
+            <h2>Donde la pasión y la dedicación son la clave para alcanzar el éxito.</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #ffffff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor Sobre-nosotros">
+            <h2 class="titulo"> Nuestra filosofia</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="IMG/Huevito1.png" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span> Cuales son nuestros valores? </h3>
+                    <p>Yemosin ESports es una organización que busca promover la cultura del gaming
+                        y la competencia deportiva en la comunidad de ESports, Mediante valores como el respeto por los
+                        demas y la empatia</p>
+
+                    <h3><span>2</span>Cuales son nuestros objetivos</h3>
+                    <p>Yemosin ESports busca crear una comunidad que se pueda sentir representada y que busca mejorar y
+                        crecer en cada momento
+                        para conseguir titulos y poder crearse un nombre en la comunidad de ESports</p>
+                </div>
+            </div>
+        </section>
+        <section class="Competiciones">
+            <div class="contenedor">
+                <h2 class="titulo"> Nuestras Competiciones</h2>
+                <div class="contenedor-competiciones">
+                    <div class="Galeria-port">
+                        <div class="imagen-port">
+                            <img src="IMG/CSGO-LOGO.png" alt="">
+                            <div class=hover-galeria>
+                                <img src="IMG/objetivo.png" alt="">
+                                <p>Competiciones</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="IMG/FORTNITE-LOGO.png" alt="">
+                            <div class=hover-galeria>
+                                <img src="IMG/objetivo.png" alt="">
+                                <p>Competiciones</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="IMG/leagueoflegends-logo.png" alt="">
+                            <div class=hover-galeria>
+                                <img src="IMG/objetivo.png" alt="">
+                                <p>Competiciones</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="IMG/VALORANT-LOGO.jpg" alt="">
+                            <div class=hover-galeria>
+                                <img src="IMG/objetivo.png" alt="">
+                                <p>Competiciones</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="IMG/Rocket_League_coverart.jpg" alt="">
+                            <div class=hover-galeria>
+                                <img src="IMG/objetivo.png" alt="">
+                                <p>Competiciones</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="Registro">
+            <div class="contenedor">
+                <h2 class="titulo">Registros</h2>
+                <div class="Registro-cont">
+                    <img src="IMG/Registro.jpg" alt="">
+                    <div class="registro-ind">
+                        <h4>Registro para la comunidad</h4>
+                        <input class="controls" type="text" name="name" id="name"
+                            placeholder="Favor de ingresar su nombre">
+                        <input class="controls" type="text" name="apellido" id="apellido"
+                            placeholder="Favor de ingresar su apellido">
+                        <input class="controls" type="email" name="mail" id="mail"
+                            placeholder="Favor de ingresar su correo">
+                        <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a></p>
+                        <button class="button" onclick="registrar()">Registrarse</button>
+                        <p><a href="#">¿Ya te registraste?</a></p>
+                    </div>
+                    <script>
+                        function registrar() {
+                            // Obtén los campos de entrada por su ID
+                            const nombre = document.getElementById('name');
+                            const apellido = document.getElementById('apellido');
+                            const correo = document.getElementById('mail');
+
+                            // Verifica si los campos no están vacíos (opcional)
+                            if (nombre.value || apellido.value || correo.value) {
+                                alert('Registro completado con éxito.');
+
+                                // Limpia los campos de entrada
+                                nombre.value = '';
+                                apellido.value = '';
+                                correo.value = '';
+                            } else {
+                                alert('Por favor, completa todos los campos antes de registrarte.');
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>phone</h4>
+                <p>8193202113</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>Yemosin@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>Mi casa</p>
+            </div>
+            <div class="content-foo-redes">
+                <h4>Redes sociales</h4>
+    <p><a href="https://www.instagram.com/jjbs31_/"><img src="IMG/instagram.png" alt="" srcset=""></a></p>
+    <p><a href="https://x.com/jb_s31"><img src="IMG/xlogo.png" alt="" srcset=""></a></p>
+</div>
+        <h2 class="titulo final ">&copy; Yemosin.corp | JJbS31</h2>
+    </footer>
+</body>
+
+</html>
